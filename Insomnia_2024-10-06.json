@@ -1,0 +1,178 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-10-06T23:58:51.225Z",
+  "__export_source": "insomnia.desktop.app:v10.0.0",
+  "resources": [
+    {
+      "_id": "req_a01f1f15f3d04f808ffba26d64987306",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728258570147,
+      "created": 1728257165248,
+      "url": "http://localhost:3333/tasks/:id",
+      "name": "Delete Task",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.0.0" }],
+      "authentication": {},
+      "metaSortKey": -1728257165248,
+      "isPrivate": false,
+      "pathParameters": [
+        { "name": "id", "value": "331092a2-c7cf-438f-8144-e40af0782018" }
+      ],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "parentId": null,
+      "modified": 1728177065124,
+      "created": 1728177024424,
+      "name": "ignite nodejs challenge 1",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_7c042eb622694a6b948af1a80281de07",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728258746546,
+      "created": 1728257118156,
+      "url": "http://localhost:3333/tasks/:id",
+      "name": "Update Task",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"description\": \"só agora\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.0.0" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1728257118156,
+      "isPrivate": false,
+      "pathParameters": [
+        { "name": "id", "value": "0826767a-4a0d-4436-ad98-7c75dc3ba097" }
+      ],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0d09fd700f0143968a6ca6645dd85140",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728258281188,
+      "created": 1728257187923,
+      "url": "http://localhost:3333/tasks/:id/complete",
+      "name": "Complete Task",
+      "description": "",
+      "method": "PATCH",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.0.0" }],
+      "authentication": {},
+      "metaSortKey": -1728218066331,
+      "isPrivate": false,
+      "pathParameters": [
+        { "name": "id", "value": "331092a2-c7cf-438f-8144-e40af0782018" }
+      ],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_11387bc9c76744dd9e908fb643b8308e",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728257179493,
+      "created": 1728179014505,
+      "url": "http://localhost:3333/tasks",
+      "name": "Create Task",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Polenta\",\n\t\"description\": \"Frita\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.0.0" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1728179014506,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_06526f43e23849e98d0717d38688cf3f",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728257949004,
+      "created": 1728177082933,
+      "url": "http://localhost:3333/tasks",
+      "name": "Fetch Tasks",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.0.0" }],
+      "authentication": {},
+      "metaSortKey": -1728177082933,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_8ce29f1214836310a3a0be1eab8cdd2e80d04d50",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728177024433,
+      "created": 1728177024433,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1728177024434,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8ce29f1214836310a3a0be1eab8cdd2e80d04d50",
+      "parentId": "wrk_706e4c9f1a2746919177e5ad9c3d18c7",
+      "modified": 1728177024439,
+      "created": 1728177024439,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
